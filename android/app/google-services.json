@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1015025819152",
+    "project_id": "loging-page-b79d7",
+    "storage_bucket": "loging-page-b79d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015025819152:android:37fc703d76279eac173495",
+        "android_client_info": {
+          "package_name": "com.example.firebasefirst"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015025819152-qnqa2r2105ppu3acrvrhkrmg4n44l8rr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdwUhWuDKp3c8WvhaQLpvXduAH7AQRL4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015025819152-qnqa2r2105ppu3acrvrhkrmg4n44l8rr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
