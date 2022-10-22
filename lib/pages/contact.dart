@@ -1,9 +1,6 @@
 // ignore_for_file: camel_case_types, prefer_final_fields
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:jiffy/jiffy.dart';
-import 'package:qr_scanner/imageResult/contact_image.dart';
-import 'package:qr_scanner/theme.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -31,8 +28,6 @@ class qr_contact extends StatelessWidget {
 
   TextEditingController _name = TextEditingController();
   TextEditingController _mNumber = TextEditingController();
-  TextEditingController _tNumber = TextEditingController();
-  TextEditingController _address = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +51,7 @@ class qr_contact extends StatelessWidget {
                 MaterialPageRoute(
                   builder: (context) => contact_image(
                     name: _name.text,
-                    address: _address.text,
+                    address: _mNumber.text,
                     mNumber: _mNumber.text,
                     tNumber: _tNumber.text,
                   ),
@@ -64,7 +59,7 @@ class qr_contact extends StatelessWidget {
               );
             },
             shape: const BeveledRectangleBorder(
-              borderRadius: BorderRadius.zero,
+              borderRadius: 34,
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -95,7 +90,7 @@ class qr_contact extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "Create QR Code",
+                  "Text",
                   style: myTextStyle.title,
                 ),
                 const SizedBox(height: 20),
